@@ -42,6 +42,12 @@ jobs:
        Invoke-WebRequest https://raw.githubusercontent.com/MREXw/Rdpacc/main/loop.bat -OutFile loop.bat
        cmd /c loop.bat
        echo Enjoy your rdp have no limit
+       @echo off
+       cls
+       :start
+       echo Example of a loop
+       pause
+       goto start
          
        
     
